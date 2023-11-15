@@ -113,8 +113,8 @@ function deleteItem(rank) {
   )
     .then((response) => response.json())
     .then((data) => {
-      container.innerHTML = "";
-      console.log(`deleted item `);
+      // container.innerHTML = "";
+      console.log(`deleted item ${data}`);
       //   getAdminInfo();
     })
     .catch((error) => {
