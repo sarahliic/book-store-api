@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section>
+      <div class="signup">
+        <div class="content">
+          <h2>Sign Up</h2>
+          <form>
+            <div class="form">
+              <div class="inputBox">
+                <input type="text" required class="username" /> <i>Username</i>
+                <p class="validation"></p>
+              </div>
+              <div class="inputBox">
+                <input type="email" required class="email" />
+                <i>Emial</i>
+              </div>
+              <div class="inputBox">
+                <input type="password" required class="password" />
+                <i>Password</i>
+                <p class="validationp"></p>
+              </div>
+              <div class="inputBox">
+                <input type="password" required class="confirm-password" />
+                <i>Confirm Password</i>
+                <p class="validationcp"></p>
+              </div>
+
+              <div class="links">
+                <a href="./singIn.html">Already have an account?</a>
+                <a href="./singIn.html" id="singUp">Sign-In</a>
+              </div>
+
+              <div class="inputBox button">
+                <button type="submit" value="Register" class="register">
+                  <a href="./singIn.html" class="linkbtn" target="_blank"
+                    >Register</a
+                  >
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- JS Scripts -->
+    <script src="./js/singUp.js"></script>
+  </body>
+</html>

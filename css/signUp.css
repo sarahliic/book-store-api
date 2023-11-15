@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+section {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section .signup {
+  position: absolute;
+  width: 400px;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 9);
+}
+section .signup .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signup .content h2 {
+  font-size: 2em;
+  color: pink;
+  text-transform: uppercase;
+}
+section .signup .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signup .content .form .inputBox {
+  position: relative;
+  width: 100%;
+}
+section .signup .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1em;
+  border: 1px solid #333333b0;
+}
+section .signup .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signup .content .form .inputBox input:focus ~ i,
+.signup .content .form .inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #333;
+}
+.signup .content .form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signup .content .form .links a {
+  color: #333;
+  text-decoration: none;
+}
+.signup .content .form .links a:nth-child(2) {
+  color: pink;
+  font-weight: 600;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.linkbtn {
+  color: white;
+  text-decoration: none;
+}
+.signup .content .form .inputBox .register {
+  padding: 10px;
+  background: pink;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+.register:active {
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  section span {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px) {
+  section span {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+@media (max-width: 900px) {
+  section .signup {
+    width: 80%;
+  }
+
+  section .signup .content h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  section .signup {
+    width: 90%;
+  }
+
+  section .signup .content h2 {
+    font-size: 1.2em;
+  }
+
+  section span {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
