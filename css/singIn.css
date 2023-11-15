@@ -11,6 +11,10 @@ body {
   min-height: 100vh;
   background: #fff;
 }
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 section {
   position: absolute;
   width: 100vw;
@@ -128,11 +132,19 @@ section .signin .content .form .inputBox i {
     width: calc(10vw - 2px);
     height: calc(10vw - 2px);
   }
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 600px) {
   section span {
     width: calc(20vw - 2px);
     height: calc(20vw - 2px);
+  }
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 

@@ -13,18 +13,18 @@
 /* Media Quiries  */
 @media (max-width: 768px) {
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem;
-    text-align: center;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin: 1rem !important;
+    text-align: center !important;
   }
 }
 
 @media (max-width: 575px) {
   .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 1rem 0;
-    text-align: center;
+    display: grid !important ;
+    grid-template-columns: 1fr !important;
+    margin: 1rem 0 !important;
+    text-align: center !important;
   }
 }

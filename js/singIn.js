@@ -81,10 +81,11 @@ function getAdminInfo() {
         section.innerHTML = "";
         let itemContainer = document.createElement("div");
         document.body.appendChild(itemContainer);
+        itemContainer.classList.add("container-grid");
         itemContainer.insertAdjacentHTML(
           "afterbegin",
           `
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; margin: 1rem;">
               <img src="${item.book_image}" class="card-img-top" alt="book_image">
               <div class="card-body">
               <h5 class="card-title">${item.title}</h5>
